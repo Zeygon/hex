@@ -48,17 +48,26 @@ angular.module('formApp', ['ngAnimate', 'ui.router','webcam'])
             templateUrl: 'partials/step-4-map.html',
             controller: function($scope) {
               $scope.c = "#fc0061";
+              $scope.derp = ""
 
-              var map = L.map('map').setView([51.505, -0.09], 13);
+              var map = L.map('map').setView([51.43915, 5.47806], 13);
 
-              L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+              L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png', {
                   attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
               }).addTo(map);
 
-              L.marker([51.5, -0.09]).addTo(map)
-                  .bindPopup('A pretty CSS3 popup.<br> Easily customizable.')
-                  .openPopup();
-                  
+              L.marker([51.43915, 5.47806]).addTo(map);
+
+              L.marker([51.4358,5.4747]).addTo(map);
+
+              L.marker([51.4317,5.4912]).addTo(map);
+              L.marker([51.4406,5.5032]).addTo(map);
+              L.marker([51.44152,5.45171]).addTo(map);
+
+
+              $scope.map = function(){
+                $scope.derp = "Wat!"
+              }
             }
         })
 

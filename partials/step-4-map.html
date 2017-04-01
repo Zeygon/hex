@@ -4,12 +4,12 @@
     </header>
     <main class="container mx-auto center">
         <div class="card m1 highcard">
-            <div id="map"></div>
-            <script>
-                
-            </script>
+
+            <div id="map" style="height:250px;" ng-click="map();"></div>
+
             <div class="p1 mx-auto">
-                <h3 class="h3">That's the nearest machine to your location</h3>
+                <h3 class="h3" ng-if="derp === ''">Choose where you want to get your ID</h3>
+                <h3 class="h3" ng-if="derp !== ''">You've choosen: <span class="green">{{derp}}</span></h3>
 
               </iframe>
                 <h3 class="h3">You can get your new ID from April the 7th.</h3>
