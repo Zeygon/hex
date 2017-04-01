@@ -13,13 +13,12 @@
             </div>
         </div>
     </main>
-    <div class="fixed left-0 right-0 proceed mx-auto center">
+    <div class="fixed left-0 right-0 proceed mx-auto center" ng-click="toggle()">
         <div ng-if="spin">
-            <div class="spin"></div>
+            <div class="spin" ng-click="$scope.spin = false;"></div>
         </div>
         <div ng-if="!spin">
             <a ui-sref="piq" class="btn btn-inverse mt2">Proceed</a>
         </div>
-        <input type="checkbox" ng-model="spin">
     </div>
 </div>
