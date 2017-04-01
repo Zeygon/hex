@@ -9,48 +9,32 @@ angular.module('formApp', ['ngAnimate', 'ui.router'])
 
     $stateProvider
 
-        // route to show our basic form (/form)
         .state('form', {
             url: '/form',
-            templateUrl: 'partials/form.html',
-            controller: 'formController'
+            templateUrl: 'partials/form.html'
         })
 
-        // nested states
-        // each of these sections will have their own view
-        // url will be nested (/form/profile)
-        .state('form.step1', {
-            url: '/step-1',
-            templateUrl: 'step-1.html'
+        .state('form.auth', {
+            url: '/auth',
+            templateUrl: 'step-2-auth.html'
         })
 
-        // url will be /form/interests
-        .state('form.step2', {
-            url: '/step-2',
-            templateUrl: 'step-2.html'
+        .state('form.piq', {
+            url: '/piq',
+            templateUrl: 'step-3-piq.html'
         })
 
-        // url will be /form/payment
-        .state('form.step3', {
-            url: '/step-3',
-            templateUrl: 'step-3.html'
+        .state('form.map', {
+            url: '/map',
+            templateUrl: 'step-4-map.html'
+        })
+
+        .state('form.done', {
+            url: '/done',
+            templateUrl: 'step-5-done.html'
         });
 
     // catch all route
     // send users to the form page
     $urlRouterProvider.otherwise('/form');
 })
-
-// our controller for the form
-// =============================================================================
-.controller('formController', function($scope) {
-
-    // we will store all of our form data in this object
-    $scope.formData = {};
-
-    // function to process the form
-    $scope.processForm = function() {
-        alert('awesome!');
-    };
-
-});
