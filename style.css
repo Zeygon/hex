@@ -103,6 +103,12 @@ footer{
   bottom: 20px;
 }
 
+.big{
+  font-size: 4em;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
 .credit{
   font-size: 76%;
   color: #fff;
