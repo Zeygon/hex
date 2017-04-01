@@ -14,27 +14,36 @@ angular.module('formApp', ['ngAnimate', 'ui.router'])
             templateUrl: 'partials/form.html'
         })
 
-        .state('form.auth', {
+        .state('auth', {
             url: '/auth',
-            templateUrl: 'step-2-auth.html'
+            templateUrl: 'partials/step-2-auth.html'
         })
 
-        .state('form.piq', {
+        .state('piq', {
             url: '/piq',
-            templateUrl: 'step-3-piq.html'
+            templateUrl: 'partials/step-3-piq.html'
         })
 
-        .state('form.map', {
+        .state('map', {
             url: '/map',
-            templateUrl: 'step-4-map.html'
+            templateUrl: 'partials/step-4-map.html'
         })
 
-        .state('form.done', {
+        .state('done', {
             url: '/done',
-            templateUrl: 'step-5-done.html'
+            templateUrl: 'partials/step-5-done.html'
         });
 
     // catch all route
     // send users to the form page
     $urlRouterProvider.otherwise('/form');
 })
+
+.controller('formCtrl', function($scope, $state){
+  $scope.c = "#F7F7F7";
+  console.log($state.current.name);
+  if ($state.current.name === "auth") {
+    $scope.c = "#fc0061";
+  }
+  //red: #fc0061
+});
