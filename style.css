@@ -1,11 +1,59 @@
-body {
-  padding: 0;
-  margin: 0;
-  background: #F7F7F7;
-  font-family: "Source Sans Pro", sans-serif;
-  color: #141822;
+* {
+    font-weight: 300;
 }
 
-.h1{
-  font-size: 4em;
+body {
+    padding: 0;
+    margin: 0;
+    background: #F7F7F7;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    color: #141822;
+}
+
+.h1 {
+    font-size: 4em;
+}
+
+h3 {
+    font-size: 3em;
+}
+
+h4 {
+    font-size: 2.5em;
+}
+
+.red {
+    color: #fc0061;
+}
+
+.card {
+    box-shadow: 0 15px 35px rgba(50, 50, 93, .1), 0 5px 15px rgba(0, 0, 0, .07);
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.btn {
+    white-space: nowrap;
+    display: inline-block;
+    height: 60px;
+    line-height: 60px;
+    padding: 0 14px;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .025em;
+    background-color: #fc0061;
+    text-decoration: none;
+    transition: all .5s ease;
+}
+
+.btn:hover {
+    box-shadow: none;
+}
+
+.container {
+    width: 90vw;
 }
