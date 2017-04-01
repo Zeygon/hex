@@ -28,7 +28,6 @@ h4 {
     color: #fc0061;
 }
 
-
 .white {
     color: #fff;
 }
@@ -92,15 +91,15 @@ button {
     color: #fc0061;
     background-color: #fff;
 }
+
 .btn-green {
     color: #fff;
     background-color: #24b47e;
 }
+
 .green-back {
     background-color: #24b47e;
 }
-
-
 
 .btn:hover {
     box-shadow: none;
@@ -119,8 +118,9 @@ main {
     position: relative;
     z-index: 100;
 }
+
 .green {
-  color: #24b47e;
+    color: #24b47e;
 }
 
 footer {
@@ -148,7 +148,7 @@ footer {
 }
 
 .spin {
-  border: 4px solid white;
+    border: 4px solid white;
     border-top: 4px solid white;
     border-right: 4px solid #24b47e;
     border-bottom: 4px solid white;
@@ -163,7 +163,6 @@ footer {
     animation-timing-function: linear;
 }
 
-
 @keyframes spin {
     from {
         transform: rotate(0deg);
@@ -173,6 +172,11 @@ footer {
     }
 }
 
-#camera{
-  visibility: hidden;
+#camera {
+    visibility: hidden;
+}
+
+#map {
+    /*width: 100%;*/
+    height: 200px;
 }
