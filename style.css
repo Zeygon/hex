@@ -70,3 +70,10 @@ footer{
   background: #fc0061;
   transform: skew(0,-12deg);
 }
+
+.credit{
+  font-size: 140%;
+  color: #fff;
+  font-weight: 400;
+  text-transform: uppercase;
+}
