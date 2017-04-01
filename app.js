@@ -16,7 +16,10 @@ angular.module('formApp', ['ngAnimate', 'ui.router'])
 
         .state('auth', {
             url: '/auth',
-            templateUrl: 'partials/step-2-auth.html'
+            templateUrl: 'partials/step-2-auth.html',
+            controller: function($scope) {
+              $scope.c = "#fc0061";
+            }
         })
 
         .state('piq', {
