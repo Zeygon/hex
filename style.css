@@ -28,9 +28,6 @@ h4 {
     color: #fc0061;
 }
 
-.green {
-    color: #24b47e;
-}
 
 .white {
     color: #fff;
@@ -99,6 +96,11 @@ button {
     color: #fff;
     background-color: #24b47e;
 }
+.green-back {
+    background-color: #24b47e;
+}
+
+
 
 .btn:hover {
     box-shadow: none;
@@ -116,6 +118,9 @@ button {
 main {
     position: relative;
     z-index: 100;
+}
+.green {
+  color: #24b47e;
 }
 
 footer {
