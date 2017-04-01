@@ -27,6 +27,13 @@ angular.module('formApp', ['ngAnimate', 'ui.router','webcam'])
             templateUrl: 'partials/step-3-piq.html',
             controller: function($scope) {
               $scope.c = "#fc0061";
+                document.getElementById('camera').addEventListener('change', function(e) {
+                        var file = e.target.files[0]; 
+                        // Do something with the image file.
+                        $scope.source = URL.createObjectURL(file);
+                        console.log($scope.source);
+                        document.getElementById("frame").src = $scope.source;
+                    });
             }
         })
 
