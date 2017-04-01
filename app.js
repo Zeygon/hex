@@ -28,7 +28,7 @@ angular.module('formApp', ['ngAnimate', 'ui.router','webcam'])
             controller: function($scope) {
               $scope.c = "#fc0061";
                 document.getElementById('camera').addEventListener('change', function(e) {
-                        var file = e.target.files[0]; 
+                        var file = e.target.files[0];
                         // Do something with the image file.
                         $scope.source = URL.createObjectURL(file);
                         console.log($scope.source);
@@ -49,7 +49,7 @@ angular.module('formApp', ['ngAnimate', 'ui.router','webcam'])
             url: '/done',
             templateUrl: 'partials/step-5-done.html',
             controller: function($scope) {
-              $scope.c = "#fc0061";
+              $scope.c = "#24b47e";
             }
         });
 
