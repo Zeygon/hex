@@ -17,7 +17,7 @@ body {
 }
 
 h3 {
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 h4 {
@@ -70,9 +70,30 @@ h4 {
     transition: all .5s ease;
 }
 
+button {
+    white-space: nowrap;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 14px;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .025em;
+    background-color: #fc0061;
+    text-decoration: none;
+    transition: all .5s ease;
+}
+
 .btn-inverse {
     color: #fc0061;
     background-color: #fff;
+}
+.btn-green {
+    color: #fff;
+    background-color: #24b47e;
 }
 
 .btn:hover {
