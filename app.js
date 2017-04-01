@@ -24,7 +24,10 @@ angular.module('formApp', ['ngAnimate', 'ui.router'])
 
         .state('piq', {
             url: '/piq',
-            templateUrl: 'partials/step-3-piq.html'
+            templateUrl: 'partials/step-3-piq.html',
+            controller: function($scope) {
+              $scope.c = "#fc0061";
+            }
         })
 
         .state('map', {

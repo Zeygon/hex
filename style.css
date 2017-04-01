@@ -13,15 +13,15 @@ body {
 }
 
 .h1 {
-    font-size: 4em;
+    /*font-size: 4em;*/
 }
 
 h3 {
-    font-size: 3em;
+    font-size: 2em;
 }
 
 h4 {
-    font-size: 2.5em;
+    font-size: 1.2em;
 }
 
 .red {
@@ -55,12 +55,12 @@ h4 {
 .btn {
     white-space: nowrap;
     display: inline-block;
-    height: 60px;
-    line-height: 60px;
+    height: 40px;
+    line-height: 40px;
     padding: 0 14px;
     color: #fff;
     border-radius: 4px;
-    font-size: 25px;
+    font-size: 15px;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: .025em;
@@ -88,14 +88,14 @@ main{
 }
 
 footer{
-  top: 600px;
+  top: 350px;
   height: 100vh;
   background: #fc0061;
   transform: skew(0,-12deg);
 }
 
 .credit{
-  font-size: 140%;
+  font-size: 80%;
   color: #fff;
   font-weight: 400;
   text-transform: uppercase;
