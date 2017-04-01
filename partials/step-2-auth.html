@@ -7,7 +7,8 @@
             <div class="p1">
                 <h3 class="mt3 h3 mb0">You need to authenticate to proceed.</h3>
 
-                <img src="../pics/id-card.svg" class="pic">
+                <img src="../pics/id-card.svg" class="pic" ng-if="spin">
+                <img src="../pics/check.png" class="pic" ng-if="!spin">
                 <h3 class="mt0 h3 ">Please hold your ID in front of your phone</h3>
             </div>
         </div>
