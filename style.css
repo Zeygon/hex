@@ -82,6 +82,11 @@ h4 {
     width: 95vw;
 }
 
+.pic{
+  width:70%;
+  height: auto;
+}
+
 main{
   position: relative;
   z-index: 100;
