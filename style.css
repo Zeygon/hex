@@ -1,0 +1,11 @@
+body {
+  padding: 0;
+  margin: 0;
+  background: #F7F7F7;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #141822;
+}
+
+.h1{
+  font-size: 4em;
+}
