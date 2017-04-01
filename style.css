@@ -49,7 +49,7 @@ h4 {
 }
 
 .highcard{
-  height: 75vh;
+  height: 60vh;
 }
 
 .btn {
@@ -79,7 +79,7 @@ h4 {
 }
 
 .container {
-    width: 90vw;
+    width: 95vw;
 }
 
 main{
@@ -92,6 +92,10 @@ footer{
   height: 100vh;
   background: #fc0061;
   transform: skew(0,-12deg);
+}
+
+.proceed{
+  bottom: 50px;
 }
 
 .credit{
