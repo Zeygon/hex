@@ -9,6 +9,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-weight: 200;
     color: #141822;
+    height: 100vh;
 }
 
 .h1 {
@@ -56,4 +57,16 @@ h4 {
 
 .container {
     width: 90vw;
+}
+
+main{
+  position: relative;
+  z-index: 100;
+}
+
+footer{
+  top: 600px;
+  height: 100vh;
+  background: #fc0061;
+  transform: skew(0,-12deg);
 }
