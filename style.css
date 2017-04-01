@@ -27,6 +27,7 @@ h4 {
 .red {
     color: #fc0061;
 }
+
 .white {
     color: #fff;
 }
@@ -35,11 +36,11 @@ h4 {
     background-color: #fc0061;
 }
 
-.full{
-  height: 100vh;
-  width: 100vw;
-  padding: 0;
-  margin: 0;
+.full {
+    height: 100vh;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
 }
 
 .card {
@@ -48,8 +49,8 @@ h4 {
     background-color: #fff;
 }
 
-.highcard{
-  height: 65vh;
+.highcard {
+    height: 65vh;
 }
 
 .btn {
@@ -69,9 +70,9 @@ h4 {
     transition: all .5s ease;
 }
 
-.btn-inverse{
-  color: #fc0061;
-  background-color: #fff;
+.btn-inverse {
+    color: #fc0061;
+    background-color: #fff;
 }
 
 .btn:hover {
@@ -82,36 +83,62 @@ h4 {
     width: 95vw;
 }
 
-.pic{
-  width:70%;
-  height: auto;
+.pic {
+    width: 70%;
+    height: auto;
 }
 
-main{
-  position: relative;
-  z-index: 100;
+main {
+    position: relative;
+    z-index: 100;
 }
 
-footer{
-  top: 350px;
-  height: 100vh;
-  background: #fc0061;
-  transform: skew(0,-12deg);
+footer {
+    top: 350px;
+    height: 100vh;
+    background: #fc0061;
+    transform: skew(0, -12deg);
 }
 
-.proceed{
-  bottom: 20px;
+.proceed {
+    bottom: 20px;
 }
 
-.big{
-  font-size: 4em;
-  font-weight: 400;
-  text-transform: uppercase;
+.big {
+    font-size: 4em;
+    font-weight: 400;
+    text-transform: uppercase;
 }
 
-.credit{
-  font-size: 76%;
-  color: #fff;
-  font-weight: 400;
-  text-transform: uppercase;
+.credit {
+    font-size: 76%;
+    color: #fff;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.spin {
+  border: 10px solid white;
+    border-top: 10px solid white;
+    border-right: 10px solid green;
+    border-bottom: 10px solid white;
+    border-left: 10px solid green;
+    border-radius: 50%;
+    margin: 20px;
+    width: 40px;
+    height: 40px;
+    animation-name: spin;
+    animation-duration: 4000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }

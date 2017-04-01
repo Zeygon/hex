@@ -13,6 +13,12 @@
         </div>
     </main>
     <div class="fixed left-0 right-0 proceed mx-auto center">
-        <a ui-sref="piq" class="btn btn-inverse mt2">Proceed</a>
+        <div ng-if="spin">
+            <div class="spin"></div>
+        </div>
+        <div ng-if="!spin">
+            <a ui-sref="piq" class="btn btn-inverse mt2">Proceed</a>
+        </div>
+        <input type="checkbox" ng-model="spin">
     </div>
 </div>

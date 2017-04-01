@@ -32,12 +32,18 @@ angular.module('formApp', ['ngAnimate', 'ui.router','webcam'])
 
         .state('map', {
             url: '/map',
-            templateUrl: 'partials/step-4-map.html'
+            templateUrl: 'partials/step-4-map.html',
+            controller: function($scope) {
+              $scope.c = "#fc0061";
+            }
         })
 
         .state('done', {
             url: '/done',
-            templateUrl: 'partials/step-5-done.html'
+            templateUrl: 'partials/step-5-done.html',
+            controller: function($scope) {
+              $scope.c = "#fc0061";
+            }
         });
 
     // catch all route
