@@ -31,14 +31,20 @@ angular.module('formApp', ['ngAnimate', 'ui.router','webcam'])
             templateUrl: 'partials/step-3-piq.html',
             controller: function($scope) {
               $scope.c = "#fc0061";
+              $scope.spinner = true;
+              $scope.style = "display:none;";
+              $scope.toggle = function(tra){
+                $scope.spinner = false;
+                $scope.style = "height: 190px;margin-top: 10px; border: 2px solid black;border-radius:4px;  background-image: url("+tra+");background-repeat: no-repeat;background-size: contain;";
 
+              }
                 document.getElementById('camera').addEventListener('change', function(e) {
                         var file = e.target.files[0];
                         // Do something with the image file.
                         $scope.source = URL.createObjectURL(file);
                         console.log($scope.source);
-                        document.getElementById("frame").src = $scope.source;
-
+                        $scope.toggle($scope.source);
+                        console.log($scope.spinner);
                     });
             }
         })
