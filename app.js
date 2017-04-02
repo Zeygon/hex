@@ -41,11 +41,12 @@ angular.module('formApp', ['ngAnimate', 'ui.router','webcam'])
                 document.getElementById('camera').addEventListener('change', function(e) {
                         var file = e.target.files[0];
                         // Do something with the image file.
-                        $scope.source = URL.createObjectURL(file);
-                        console.log($scope.source);
-                        $scope.toggle($scope.source);
-                        console.log($scope.spinner);
-                    });
+                        var img = document.getElementById("frame");
+                        console.log(img.src);
+                        img.src = URL.createObjectURL(file);
+                        console.log(img.src);
+                        
+                  });
             }
         })
 
