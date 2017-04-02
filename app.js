@@ -35,7 +35,7 @@ angular.module('formApp', ['ngAnimate', 'ui.router','webcam'])
               $scope.style = "display:none;";
               $scope.toggle = function(){
                 $scope.spinner = false;
-                $scope.style = "height: 150px; width: 75%; margin-top: 10px; border: 2px solid black;border-radius:4px;";
+                $scope.style = "height: 190px; width: 90%; margin-top: 10px; border: 2px solid black;border-radius:4px;";
 
               }
                 document.getElementById('camera').addEventListener('change', function(e) {

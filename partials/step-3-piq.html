@@ -13,16 +13,15 @@
                 <label class="btn btn-green" for="camera" ng-click="toggle();">Take piq</label>
                 <input type="file" accept="image/*;capture=camera" id="camera">
                 <img id="frame" src="{{source}}" style="{{style}}">
-                <h3 class="mt3 h3 ">Please hold your face in front of your phone</h3>
             </div>
         </div>
     </main>
     <div class="fixed left-0 right-0 proceed mx-auto center">
-      <div ng-if="spinner">
-          <div class="spin"></div>
-      </div>
-      <div ng-if="!spinner">
-          <a ui-sref="map" class="btn btn-inverse mt2">Proceed</a>
-      </div>
+        <div ng-if="spinner">
+            <div class="spin"></div>
+        </div>
+        <div ng-if="!spinner">
+            <a ui-sref="map" class="btn btn-inverse mt2">Proceed</a>
+        </div>
     </div>
 </div>
