@@ -66,7 +66,7 @@ angular.module('formApp', ['ngAnimate', 'ui.router','webcam'])
 
 
               $scope.map = function(){
-                $scope.derp = "Wat!"
+                $scope.derp = "Station Eindhoven"
               }
             }
         })
